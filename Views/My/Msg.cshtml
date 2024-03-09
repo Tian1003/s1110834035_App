@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Msg";
+}
+
+<body>
+    @{
+        string[] sA = ViewBag.studA;
+        string[] sB = ViewBag.studB;
+        string[] sC = ViewBag.studC;
+    }
+    <div>   
+        學生成績列表:
+        <table style="border:3px #FFD382 dashed;" cellpadding="10" border="2" width="400">
+            <tr>
+                <th>座號</th>
+                <th>姓名</th>
+                <th>成績</th>
+            </tr>
+            <tr>
+                <td>@sA[0]</td>
+                <td>@sA[1]</td>
+                <td>@sA[2]</td>
+            </tr>
+            <tr>
+                <td>@sB[0]</td>
+                <td>@sB[1]</td>
+                <td>@sB[2]</td>
+            </tr>
+            <tr>
+                <td>@sC[0]</td>
+                <td>@sC[1]</td>
+                <td>@sC[2]</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
