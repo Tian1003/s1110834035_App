@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - s1110834035_App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/s1110834035_App.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Add custom CSS */
+        body {
+            background-color: #f0f0f0;
+            padding-bottom: 100px; /* Adjust according to your footer's height */
+        }
+
+        .btn-group-center {
+            display: flex;
+            justify-content: center;
+        }
+
+            .btn-group-center .btn {
+                width: 200px;
+                height: 60px;
+                margin: 5px;
+                border: none; /* Remove border */
+                font-weight: bold; /* Set font weight to bold */
+            }
+
+                .btn-group-center .btn:nth-child(1) {
+                    background-color: #3FA66E;
+                }
+
+                .btn-group-center .btn:nth-child(2) {
+                    background-color: #31364A;
+                }
+
+                .btn-group-center .btn:nth-child(3) {
+                    background-color: #95C599;
+                }
+
+                .btn-group-center .btn:nth-child(4) {
+                    background-color: #2B401D;
+                }
+
+        /* Custom CSS for About Us section */
+        .about-us-section {
+            font-weight: bold; /* Set font weight to bold */
+        }
+
+        /* Custom CSS for carousel caption */
+        .carousel-caption h3,
+        .carousel-caption p {
+            color: white; /* Set text color to white */
+            font-weight: bolder; /* Set font weight to bold */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid fixed-top p-0">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="~/images/logo2.jpg" style="width:100px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">最新消息</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    其他資訊
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">關於我們</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <footer class="footer fixed-bottom py-3 bg-dark text-white">
+        <div class="container">
+            <span class="text-muted" style="color: white; font-size: 18px; font-weight: bold;">Designer:資應五甲 Tian 1110834035   </span>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

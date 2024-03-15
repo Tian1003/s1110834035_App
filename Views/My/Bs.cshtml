@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "Bs";
+    Layout = "~/Views/Shared/_LayoutMy.cshtml";
+}
+
+<!-- 輪播圖 -->
+<div class="container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/11.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/12.JPG" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- 功能 -->
+<div class="container">
+    <div class="btn-group-center">
+        <button class="btn btn-primary" type="button">個展規劃</button>
+        <button class="btn btn-primary" type="button">攝影外包</button>
+        <button class="btn btn-primary" type="button">設備租借</button>
+        <button class="btn btn-primary" type="button">影棚租借</button>
+    </div>
+</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+
+<!-- 關於我們&聯絡我們 -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-12 col-lg-6 about-us-section">
+            <h1>關於我們</h1>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="~/images/7.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>守護您的信賴</h3>
+                            <p>熱血工作者，做客戶的堅強後盾，服務一步到位</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="~/images/9.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>廉價建霖 您最佳的選擇</h3>
+                            <p>後製包含瑕疵處理、調色、修片、去背、轉檔...等</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item  active">
+                        <img src="~/images/10.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>24小時全天候待命</h3>
+                            <p>只為搏君一笑</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 聯絡我們 -->
+        <div class="col-12 col-lg-6">
+            <h1>聯絡我們</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">連絡電話</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的電話號碼">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">電子郵件</label>
+                    <input type="email" class="form-control" id="email" placeholder="請輸入您的電子郵件">
+                </div>
+                <div class="mb-3">
+                    <label for="feedback" class="form-label">意見回饋</label>
+                    <textarea class="form-control" id="feedback" rows="3" placeholder="請為我們提供您寶貴的意見"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="alert('已送出！')">送出</button>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+

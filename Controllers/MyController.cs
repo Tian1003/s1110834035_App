@@ -21,19 +21,22 @@ namespace s1110834035_App.Controllers
             return View();
         }
 
-        public ContentResult Intro() {
+        public ContentResult Intro()
+        {
 
             string s = "<h1>1110834035<br>蔣天誠</h1>";
-      
-            return Content(s,"text/html", System.Text.Encoding.UTF8);
+
+            return Content(s, "text/html", System.Text.Encoding.UTF8);
         }
 
-        public IActionResult Link() {
+        public IActionResult Link()
+        {
 
             return Redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
 
-        public ActionResult Msg() {
+        public ActionResult Msg()
+        {
 
             string[] A = { "1", "均銘", "100" };
             string[] B = { "2", "揚凱", "99" };
@@ -41,8 +44,13 @@ namespace s1110834035_App.Controllers
             ViewBag.studA = A;
             ViewBag.studB = B;
             ViewBag.studC = C;
-            
+
             return View("~/Views/My/Msg.cshtml");
+        }
+
+
+        public ActionResult Bs(){
+            return View("~/Views/My/Bs.cshtml");
         }
     }
 }
